@@ -1,6 +1,6 @@
 ![](https://mmbiz.qpic.cn/mmbiz_gif/ia1Z7HH4plnCxdmpGxsqGY9DdFDbqL5pYibO4gWauzIcpicwLdtMZ2QFhMh1U1iaIhVGVRwTevzbN3K8z5RDiar6FSg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
 
-应用上云，怎能没有容器！点击上方容器魔方关注我
+
 
   
 
@@ -26,18 +26,13 @@ Kubernetes从2014年6月由Google宣布开源，到2015年7月发布第一个正
 
 ● 现有基础设施上托管的业务能否平滑切换到Kubernetes？
 
-●   企业人员（开发、测试、运维、设计等）能否快速适应Kubernetes？是否会带来较大的转型挑战？
-
-…………
+●   企业人员（开发、测试、运维、设计等）能否快速适应Kubernetes？是否会带来较大的转型挑战？…………
 
 如果我们对这些疑问进行归类，可以聚焦到以下三个基础问题上来。
 
   
 
-需不需要Kubernetes？
-
-01
-
+## 1. 需不需要Kubernetes？
 Kubernetes是一个“容器编排平台”，即：容器化业务的管理平台。因此，需不需要Kubernetes通常与业务需不需要做容器化改造在一起考虑。与基于“服务器+Linux+软件包”的传统非容器化业务相比，核心差异点主要有两处：
 
 ●   业务交付件是容器化交付件；
@@ -60,49 +55,14 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 
 而需不需要Kubernetes完全取决于这两点是否能够带来收益。下表简单描述了一些关键收益，以及同时引入的问题。
 
-**收益**
-
-**问题**
-
-容器化交付件
-
-● 环境一致性保障
-
-● 交付简单
-
-  
-
-● 交付件对传输与储存有更高要求
-
-● 引入新的镜像构建过程
-
-  
-
-容器化运行时
-
-● 更细粒度资源切分
-
-● 进程级资源SLA保障
-
-● 秒级启动与扩容
-
-  
-
-● 业务密度高，运维难度增加
-
-● 网络、存储的处理复杂度提升
-
-  
-
-  
+![](http://oldboy-study.oss-cn-qingdao.aliyuncs.com/%E5%8C%BA%E5%88%AB.png?Expires=1539171501&OSSAccessKeyId=TMP.AQGiQgPZ8kMPp57gw664qmAfysvyQLIYMd8gUhR_t9HGgxTBuiJXTph35nkjADAtAhRUUtRMr1Abd4Eq9bd9wLsSJTgRKwIVAK4uelMnNR9hoOdKGmRxmyosJaCH&Signature=zTDSL1uEFnkbS5ngMf9cXh%2B9VHw%3D)
 
 从企业的角度来看，容器化改造对于关键的业务交付效率、基础设施资源利用率普遍会带来很好的收益，尤其是对交付效率和资源成本更为关注的轻资产型业务，这也是为何容器技术得到广泛关注与应用的主要原因。而相对而言容器化改造所带来的问题则可以通过引入一些工具与服务进行解决，比如自动化镜像构建工具、具有高速传输与高容量存储能力的镜像仓库、容器化环境与业务的监控运维工具、高性能与配置自动化的容器网络与存储管理服务等。
 
   
 
-如何切换到Kubernetes？
+## 2. 如何切换到Kubernetes？
 
-02
 
 一旦确定要使用Kubernetes，那对于企业业务而言，就需要考虑业务研发流程、基础设施资源如何切换到Kubernetes。这里，通常可以分为三个场景考虑：
 
@@ -117,48 +77,15 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 下表描述了典型的处理方式：
 
   
-
-**典型处理方式**
-
-交付流程切换
-
-① 搭建容器镜像仓库，用于保存容器化交付件
-
-②容器化改造，软件包改造成Docker Image 
-
-③编写新的容器化版本发布包，包括运行在K8S上所需的描述文件
-
-④改造开发、测试、生产环境，改为容器化基础设施（K8S集群）
-
-⑤修改CI/CD系统，对接到容器化测试、生产环境
-
-⑥（可选）修改现有交付流程管理工具或平台，适应新的容器化交付流程
-
-运维流程切换
-
- ① 部署用于收集容器化基础设施（K8S集群）的监控、日志、告警等信息的运维系统，并对接到运维中心
-
-②部署用于收集容器化业务的监控、日志、告警等信息的运维系统，并对接到运维中心
-
-运行负载迁移
-
- ①准备新的容器化基础设施（K8S集群）
-
-②部署新的容器化版本，业务逻辑测试通过
-
-③准备灰度发布环境，通过A/B testing或蓝绿等发布方式完成新旧版本运行时负载迁移
-
-④非容器化的旧版本下线，完成迁移
-
-  
+![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010184002.png?Expires=1539171663&OSSAccessKeyId=TMP.AQGiQgPZ8kMPp57gw664qmAfysvyQLIYMd8gUhR_t9HGgxTBuiJXTph35nkjADAtAhRUUtRMr1Abd4Eq9bd9wLsSJTgRKwIVAK4uelMnNR9hoOdKGmRxmyosJaCH&Signature=C4HwcIBCEzAWit5n3UTld5yaOIE%3D)
 
 在上述过程中可以看到，在企业落地Kubernetes过程中，除了Kubernetes平台本身的搭建，围绕着Kubernetes生态的一些工具与服务也非常重要，包括面向容器化业务的CI/CD工具链、容器化环境与业务的监控运维、应用发布与交付工具等。在不具备相关容器化平台完整能力的情况下，落地Kubernetes并不能够达成提升业务交付效率的目的。
 
   
 
-如何适应Kubernetes？
+## 3. 如何适应Kubernetes？
 
-03
+
 
 完成面向容器的交付、运维与迁移流程改造只是做好了实践Kubernetes的基础条件准备工作，对企业而言最重要的还是业务如何在新的平台之上运转的更高效、更可靠、更安全。“容器”相比于传统基础设施而言，更适合作为当前企业的新一代应用设施的原因主要包括三点：
 
@@ -178,9 +105,8 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 
   
 
-华为云帮助企业落地Kubernetes
+## 4. 华为云帮助企业落地Kubernetes
 
-04
 
 作为Kubernetes 最早的采用者之一，华为自2013年起在内部多个产品落地Kubernetes，在这个过程中，围绕着本文上述的三个基本性问题，以及规模化生产环境落地场景，华为发现并解决了一些功能缺失、系统级高可用、可扩展性挑战等问题，并积极回馈给了Kubernetes社区。基于这些场景的落地经验，以及广泛的社区核心特性贡献，华为也顺利成为Kubernetes社区技术监管委员会成员，以及CNCF基金会TOC成员。
 
@@ -188,8 +114,7 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 
 一方面基于内部实践的思考，另一方面基于外部各类客户场景的落地经验总结，华为云围绕着上述三个基础问题，面向企业用户提供了全栈Kubernetes服务，以期能够帮助企业快速落地Kubernetes，助力企业Cloud-Native战略实施。
 
-![](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
-
+![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010184757.png?Expires=1539172114&OSSAccessKeyId=TMP.AQGiQgPZ8kMPp57gw664qmAfysvyQLIYMd8gUhR_t9HGgxTBuiJXTph35nkjADAtAhRUUtRMr1Abd4Eq9bd9wLsSJTgRKwIVAK4uelMnNR9hoOdKGmRxmyosJaCH&Signature=QvkgGnH3ACyAc%2B7bvOGwZ%2FyjHJo%3D)
 华为云提供的Kubernetes全栈服务主要包括：
 
   
@@ -227,20 +152,7 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 落地Kubernetes除了对Kubernetes平台自身的熟悉与掌握之外，如何对现有业务及基础设施进行容器化改造、如何应对Kubernetes对业务现有交付与运维流程的冲击、如何深入思考容器与Kubernetes给企业所带来的转型化思考都是需要一并考虑的问题。
 
 引入围绕着Kubernetes的各类工具化服务能够让企业快速获取业界最佳实践，平滑迁移现有软硬件资产，减小对现有业务交付与运维流程的冲击，使得企业平稳落地Kubernetes并合理优化现有业务，最终达成提升业务交付效率、简化基础设施管理的目的。
-
-  
-
-**加入容器技术群**
-
-**这里有一大群小伙伴**
-
-**和你交流探讨**
-
-长按右侧扫码
-
-![](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
-
-  
+ 
 
 推荐阅读
 
