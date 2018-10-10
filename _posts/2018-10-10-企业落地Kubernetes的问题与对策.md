@@ -14,7 +14,7 @@ Kubernetes从2014年6月由Google宣布开源，到2015年7月发布第一个正
 
 截止3月份，Kubernetes项目在总体贡献方面位于GitHub第9位，作者/问题排在第2位，仅次于Linux项目。从CNCF基金会今年3月份发布的报告，71％的财富100强企业使用容器，超过50％的财富100强企业使用Kubernetes作为容器业务流程平台。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/ia1Z7HH4plnCxdmpGxsqGY9DdFDbqL5pYibFacnjPktdSy7wNQqPcSibGxicoZ8HtG0FWh1QYqF7Id03jkS7DJGojQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010185549.png?Expires=1539172585&OSSAccessKeyId=TMP.AQGiQgPZ8kMPp57gw664qmAfysvyQLIYMd8gUhR_t9HGgxTBuiJXTph35nkjADAtAhRUUtRMr1Abd4Eq9bd9wLsSJTgRKwIVAK4uelMnNR9hoOdKGmRxmyosJaCH&Signature=2pKkSx0DgOe%2FQJao1cANzQNGLNg%3D)
 
 企业在思考并实践落地Kubernetes的过程中，通常需要面对多个问题，比如：  
 
