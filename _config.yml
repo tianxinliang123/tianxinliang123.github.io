@@ -11,8 +11,8 @@ github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "运维人员如何让自己薪水超越年薪30、50万？"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description:"要想成功，3个动作很重要:做出来、写出来、讲出来"
+sidebar-avatar: /img/鸣人.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
