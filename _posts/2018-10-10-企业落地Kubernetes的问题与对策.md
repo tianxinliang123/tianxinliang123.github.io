@@ -14,7 +14,7 @@ Kubernetes从2014年6月由Google宣布开源，到2015年7月发布第一个正
 
 截止3月份，Kubernetes项目在总体贡献方面位于GitHub第9位，作者/问题排在第2位，仅次于Linux项目。从CNCF基金会今年3月份发布的报告，71％的财富100强企业使用容器，超过50％的财富100强企业使用Kubernetes作为容器业务流程平台。
 
-![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010185549.png?Expires=1539172585&OSSAccessKeyId=TMP.AQGiQgPZ8kMPp57gw664qmAfysvyQLIYMd8gUhR_t9HGgxTBuiJXTph35nkjADAtAhRUUtRMr1Abd4Eq9bd9wLsSJTgRKwIVAK4uelMnNR9hoOdKGmRxmyosJaCH&Signature=2pKkSx0DgOe%2FQJao1cANzQNGLNg%3D)
+![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010185549.png)
 
 企业在思考并实践落地Kubernetes的过程中，通常需要面对多个问题，比如：  
 
@@ -55,7 +55,7 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 
 而需不需要Kubernetes完全取决于这两点是否能够带来收益。下表简单描述了一些关键收益，以及同时引入的问题。
 
-![](http://oldboy-study.oss-cn-qingdao.aliyuncs.com/%E5%8C%BA%E5%88%AB.png?Expires=1539171501&OSSAccessKeyId=TMP.AQGiQgPZ8kMPp57gw664qmAfysvyQLIYMd8gUhR_t9HGgxTBuiJXTph35nkjADAtAhRUUtRMr1Abd4Eq9bd9wLsSJTgRKwIVAK4uelMnNR9hoOdKGmRxmyosJaCH&Signature=zTDSL1uEFnkbS5ngMf9cXh%2B9VHw%3D)
+![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/%E5%8C%BA%E5%88%AB.png)
 
 从企业的角度来看，容器化改造对于关键的业务交付效率、基础设施资源利用率普遍会带来很好的收益，尤其是对交付效率和资源成本更为关注的轻资产型业务，这也是为何容器技术得到广泛关注与应用的主要原因。而相对而言容器化改造所带来的问题则可以通过引入一些工具与服务进行解决，比如自动化镜像构建工具、具有高速传输与高容量存储能力的镜像仓库、容器化环境与业务的监控运维工具、高性能与配置自动化的容器网络与存储管理服务等。
 
@@ -77,7 +77,7 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 下表描述了典型的处理方式：
 
   
-![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010184002.png?Expires=1539171663&OSSAccessKeyId=TMP.AQGiQgPZ8kMPp57gw664qmAfysvyQLIYMd8gUhR_t9HGgxTBuiJXTph35nkjADAtAhRUUtRMr1Abd4Eq9bd9wLsSJTgRKwIVAK4uelMnNR9hoOdKGmRxmyosJaCH&Signature=C4HwcIBCEzAWit5n3UTld5yaOIE%3D)
+![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010184002.png)
 
 在上述过程中可以看到，在企业落地Kubernetes过程中，除了Kubernetes平台本身的搭建，围绕着Kubernetes生态的一些工具与服务也非常重要，包括面向容器化业务的CI/CD工具链、容器化环境与业务的监控运维、应用发布与交付工具等。在不具备相关容器化平台完整能力的情况下，落地Kubernetes并不能够达成提升业务交付效率的目的。
 
@@ -114,7 +114,7 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 
 一方面基于内部实践的思考，另一方面基于外部各类客户场景的落地经验总结，华为云围绕着上述三个基础问题，面向企业用户提供了全栈Kubernetes服务，以期能够帮助企业快速落地Kubernetes，助力企业Cloud-Native战略实施。
 
-![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010184757.png?Expires=1539172114&OSSAccessKeyId=TMP.AQGiQgPZ8kMPp57gw664qmAfysvyQLIYMd8gUhR_t9HGgxTBuiJXTph35nkjADAtAhRUUtRMr1Abd4Eq9bd9wLsSJTgRKwIVAK4uelMnNR9hoOdKGmRxmyosJaCH&Signature=QvkgGnH3ACyAc%2B7bvOGwZ%2FyjHJo%3D)
+![](https://oldboy-study.oss-cn-qingdao.aliyuncs.com/QQ%E5%9B%BE%E7%89%8720181010184757.png)
 华为云提供的Kubernetes全栈服务主要包括：
 
   
