@@ -1,3 +1,14 @@
+---
+layout:     post                   
+title:      企业落地Kubernetes的问题与对策            
+subtitle:   Hello World, Hello Blog
+date:       2018-10-10             
+author:     转载                     
+header-img: img/风景图.jpg   
+catalog: true                       
+tags:                             
+    - k8s
+---
 ![](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539179164713&di=69d8899618dae4d3e43d115e4d03b97b&imgtype=0&src=http%3A%2F%2Fztd00.photos.bdimg.com%2Fztd%2Fw%3D350%3Bq%3D70%2Fsign%3D2ebc85f5c03d70cf4cfaac08c8e7a03d%2F4e4a20a4462309f7c1d07ade7b0e0cf3d6cad6bb.jpg)
 
 
@@ -162,10 +173,5 @@ Kubernetes是一个“容器编排平台”，即：容器化业务的管理平�
 
 [大海航行靠舵手 华为云靠什么征服K8S？](https://mp.weixin.qq.com/s?__biz=MzIzNzU5NTYzMA==&mid=2247483729&idx=1&sn=ab00daadfa8d2f502d481b038e85cdb4&chksm=e8c77fd0dfb0f6c66e3bd1dfaadfaacd4fb12201bf18d886b5fc2207c6fdf92a7bafccb55dfc&scene=21#wechat_redirect)
 
-  
-
-  
-
-点击阅读原文，了解云容器引擎CCE
 
 本文转载自：[企业落地Kubernetes的问题与对策](https://mp.weixin.qq.com/s?__biz=MzIzNzU5NTYzMA==&mid=2247483766&idx=1&sn=74ca05a880948c193387a4c572e0838f&chksm=e8c77ff7dfb0f6e134ba5217c0da29f62eab38c8c64e604919b1340fda9fda5f9e3914b49573&mpshare=1&scene=1&srcid=1009g9l7CyD3WgIIL9eVsBvM#rd)
