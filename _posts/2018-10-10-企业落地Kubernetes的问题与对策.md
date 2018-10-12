@@ -4,7 +4,7 @@ title:      企业落地Kubernetes的问题与对策
 subtitle:   Hello World, Hello Blog
 date:       2018-10-10             
 author:     转载                     
-header-img: img/风景图.jpg   
+header-img: img/0585.jpg_wh1200.jpg
 catalog: true                       
 tags:                             
     - k8s
